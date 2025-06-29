@@ -4,7 +4,7 @@ import { FaSeedling, FaHeart } from "react-icons/fa";
 function AboutMe() {
   return (
     <section id="about" className="bg-[#0f172a] text-[#f1f5f9] py-10">
-      <div className="w-9/12 mx-auto">
+      <div className="w-8/12 mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-8">
           About <span className="text-[#3b82f6]">Me</span>
         </h2>

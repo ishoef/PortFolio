@@ -35,7 +35,7 @@ const tagColors = {
 
 const FeaturedProjects = () => {
   return (
-    <section className="bg-[#0e1c2f] text-white py-16">
+    <section id="projects" className="bg-[#0e1c2f] text-white py-16">
       <div className="w-8/12 mx-auto">
         <h2 className="text-4xl font-bold text-center text-blue-400 mb-2">
           Featured Projects
@@ -73,7 +73,7 @@ const FeaturedProjects = () => {
                   href="#"
                   className="w-full flex items-center justify-center mt-6 border border-green-400 bg-green-500/10 hover:bg-blue-500 text-white font-medium px-4 py-2 rounded-lg transition-colors duration-300"
                 >
-                  View Details 
+                  View Details
                 </a>
               </div>
             </div>

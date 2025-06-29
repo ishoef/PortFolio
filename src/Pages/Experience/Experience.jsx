@@ -32,7 +32,10 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section className="min-h-content flex flex-col items-center justify-center bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white p-20">
+    <section
+      id="experience"
+      className="min-h-content flex flex-col items-center justify-center bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white p-20"
+    >
       <h1 className="text-4xl font-bold mb-10 text-center">
         <span className="text-blue-400">Experience</span>
         <div className="w-24 h-1 bg-green-400 mt-2 mx-auto"></div>
