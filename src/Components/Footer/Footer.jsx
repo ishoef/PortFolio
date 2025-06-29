@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"; // Import desired icons
+import Logo from "../Logo/Logo";
 
 const Footer = () => {
   return (
@@ -8,26 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 border-b border-gray-700 pb-8 mb-8">
           {/* Section 1: Ismail Nayef Info */}
           <div>
-            <div className="flex items-center mb-4">
-              <div className="bg-green-500 p-2 rounded-lg mr-3">
-                {/* You can replace this with an actual logo image if preferred */}
-                <svg
-                  className="w-6 h-6 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                  ></path>
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold text-white">Ismail Nayef</h3>
-            </div>
+            <Logo/>
             <p className="text-gray-400 leading-relaxed mb-6">
               Passionate full-stack developer creating innovative web solutions
               with modern technologies and clean code practices.

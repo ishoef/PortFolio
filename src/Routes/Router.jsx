@@ -3,7 +3,6 @@ import Home from "../Pages/Home/Home";
 import MainLayout from "../Layouts/MainLayout";
 import Error from "../Pages/Error/Error";
 
-
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -15,8 +14,6 @@ export const router = createBrowserRouter([
         index: true,
         Component: Home,
       },
-      
-      
     ],
   },
 ]);
