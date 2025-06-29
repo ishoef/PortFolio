@@ -30,7 +30,7 @@ function Hero() {
 
   return (
     <div id="hero" className="bg-[#0f172a] text-[#cbd5e1] font-mono">
-      <section className="w-8/12 mx-auto flex flex-col md:flex-row justify-between items-center py-26">
+      <section className="w-10/12 md:w-8/12 mx-auto flex flex-col md:flex-row justify-between items-center py-5 md:py-26">
         <motion.div
           className="max-w-xl"
           initial={{ opacity: 0, y: 50 }}
@@ -39,7 +39,7 @@ function Hero() {
         >
           <p className="text-[#22c55e]"> &gt;_console.log("Hello World!")</p>
           <motion.h1
-            className="text-4xl md:text-5xl font-bold mt-4"
+            className="text-2xl md:text-5xl font-bold mt-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
@@ -51,7 +51,7 @@ function Hero() {
           </motion.h1>
 
           <motion.h2
-            className="text-2xl mt-2 border-r-2 border-[#3b82f6] pr-2 whitespace-nowrap"
+            className="text-xl md:text-2xl mt-2 border-r-2 border-[#3b82f6] pr-2 whitespace-nowrap"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1 }}
@@ -61,7 +61,7 @@ function Hero() {
           </motion.h2>
 
           <motion.p
-            className="text-[#94a3b8] mt-4"
+            className="text-[#94a3b8] mt-4 text-center md:text-start"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.5 }}
@@ -72,7 +72,7 @@ function Hero() {
           </motion.p>
 
           <motion.div
-            className="mt-6 flex items-center space-x-4"
+            className="mt-6 flex items-center justify-center md:space-x-4 "
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 2 }}
