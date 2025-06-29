@@ -34,7 +34,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="min-h-content flex flex-col items-center justify-center bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white p-20"
+      className="min-h-content flex flex-col items-center justify-center bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white p-3 md:p-20"
     >
       <h1 className="text-4xl font-bold mb-10 text-center">
         <span className="text-blue-400">Experience</span>

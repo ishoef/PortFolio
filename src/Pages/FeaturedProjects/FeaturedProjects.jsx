@@ -36,7 +36,7 @@ const tagColors = {
 const FeaturedProjects = () => {
   return (
     <section id="projects" className="bg-[#0e1c2f] text-white py-16">
-      <div className="w-8/12 mx-auto">
+      <div className="w-11/12 md:w-8/12 mx-auto">
         <h2 className="text-4xl font-bold text-center text-blue-400 mb-2">
           Featured Projects
         </h2>

@@ -17,7 +17,7 @@ const ContactSection = () => {
         <span className="text-blue-400">Get in Touch</span>
         <div className="w-24 h-1 bg-green-400 mt-2 mx-auto"></div>
       </h1>
-      <div className="w-8/12 mx-auto grid md:grid-cols-2 gap-8">
+      <div className="w-11/12 md:w-8/12 mx-auto grid md:grid-cols-2 gap-8">
         {/* Left - Contact Info */}
         <div className="bg-[#121f36] p-8 rounded-xl shadow-md">
           <h3 className="text-green-400 text-xl font-semibold mb-2">
