@@ -43,7 +43,7 @@ const Header = () => {
 
         {/* Hire Me Button */}
         <div className="hidden md:block">
-          <button className="bg-gradient-to-r from-[#14b8a6] to-[#3b82f6] text-white font-bold px-4 py-2 rounded">
+          <button className="btn border-none hover:bg-gradient-to-l transition-all duration-300 ease-in-out bg-gradient-to-r from-[#14b8a6] to-[#3b82f6] text-white font-bold px-4 py-2 rounded">
             Hire Me
           </button>
         </div>

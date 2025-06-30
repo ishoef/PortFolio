@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 border-b border-gray-700 pb-8 mb-8">
           {/* Section 1: Ismail Nayef Info */}
           <div>
-            <Logo/>
+            <Logo />
             <p className="text-gray-400 leading-relaxed mb-6">
               Passionate full-stack developer creating innovative web solutions
               with modern technologies and clean code practices.
@@ -88,10 +88,10 @@ const Footer = () => {
             <div className="space-y-3">
               <p>
                 <a
-                  href="mailto:johndoe@example.com"
+                  href="mailto:ismailhossennayeb@gmail.com"
                   className="text-gray-400 hover:text-green-500 transition-colors duration-300"
                 >
-                  johndoe@example.com
+                  ismailhossennayeb@gmail.com
                 </a>
               </p>
               <p>
@@ -99,7 +99,7 @@ const Footer = () => {
                   href="tel:+15551234567"
                   className="text-gray-400 hover:text-green-500 transition-colors duration-300"
                 >
-                  +1 (555) 123-4567
+                  +20 1554151689
                 </a>
               </p>
               <p className="text-gray-400">Available for freelance work</p>
@@ -124,7 +124,7 @@ const Footer = () => {
           </p>
           <div className="flex space-x-3">
             <span className="bg-purple-600 text-white px-3 py-1 rounded-md text-xs font-semibold">
-              Next.js
+              React.js
             </span>
             <span className="bg-blue-500 text-white px-3 py-1 rounded-md text-xs font-semibold">
               Tailwind CSS

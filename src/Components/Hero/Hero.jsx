@@ -72,7 +72,7 @@ function Hero() {
           </motion.p>
 
           <motion.div
-            className="mt-6 flex items-center justify-center md:space-x-4 "
+            className="mt-6 flex items-center justify-center md:justify-start md:space-x-4 "
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 2 }}
@@ -96,15 +96,12 @@ function Hero() {
         </motion.div>
 
         <motion.div
-          className="mt-10 md:mt-0"
-          animate={{
-            x: [0, 10, 0, -10, 0],
-            y: [0, -10, 0, 10, 0],
-          }}
+          className="mt-10 md:mt-0 mr-20"
+          animate={{ y: [0, 20, 0] }} // Moves down and back up
           transition={{
-            duration: 6,
-            repeat: Infinity,
-            ease: "easeInOut",
+            duration: 4, // Time for one full up-down loop
+            repeat: Infinity, // Loops forever
+            ease: "easeInOut", // Smooth easing
           }}
         >
           <img
