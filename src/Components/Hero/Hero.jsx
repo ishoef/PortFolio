@@ -96,7 +96,7 @@ function Hero() {
         </motion.div>
 
         <motion.div
-          className="mt-10 md:mt-0 mr-20"
+          className="mt-10 md:mt-0 md:mr-20"
           animate={{ y: [0, 20, 0] }} // Moves down and back up
           transition={{
             duration: 4, // Time for one full up-down loop
