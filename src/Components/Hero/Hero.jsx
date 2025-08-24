@@ -78,7 +78,8 @@ function Hero() {
             transition={{ delay: 2 }}
           >
             <a
-              href="#"
+              href="/resume.pdf"
+              download="Ismail_Nayef_Resume.pdf"
               className="border border-[#3b82f6] bg-[#3b82f6]/10 hover:bg-primary text-white px-4 py-2 rounded"
             >
               Download Resume
