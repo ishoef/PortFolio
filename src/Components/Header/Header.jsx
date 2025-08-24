@@ -1,98 +1,91 @@
 import React, { useState } from "react";
-import { Link } from "react-router"; // You may want to change this to 'react-router-dom'
 import { TiThMenu } from "react-icons/ti";
+import { IoMdClose } from "react-icons/io";
 import Logo from "../Logo/Logo";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const navLinks = [
+    { id: "about", label: "About" },
+    { id: "skills", label: "Skills" },
+    { id: "education", label: "Education" },
+    { id: "experience", label: "Experience" },
+    { id: "projects", label: "Projects" },
+    { id: "contact", label: "Contact" },
+  ];
+
   return (
-    <header className="bg-[#020617]">
+    <header className="bg-gray-900 fixed top-0 left-0 z-50 w-full shadow-md border-b border-gray-700">
       <div className="w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 mx-auto flex justify-between items-center py-4">
         {/* Logo Section */}
-        <Logo/>
+        <Logo />
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex space-x-6">
-          <a href="#about" className="text-[#cbd5e1] hover:text-[#3b82f6]">
-            About
-          </a>
-          <a href="#Skills" className="text-[#cbd5e1] hover:text-[#3b82f6]">
-            Skills
-          </a>
-          <a href="#education" className="text-[#cbd5e1] hover:text-[#3b82f6]">
-            Education
-          </a>
-          <a href="#experience" className="text-[#cbd5e1] hover:text-[#3b82f6]">
-            Experience
-          </a>
-          <a href="#projects" className="text-[#cbd5e1] hover:text-[#3b82f6]">
-            Projects
-          </a>
-          <a href="#contact" className="text-[#cbd5e1] hover:text-[#3b82f6]">
-            Contact
-          </a>
+        <nav className="hidden lg:flex space-x-6">
+          {navLinks.map((link) => (
+            <a
+              key={link.id}
+              href={`#${link.id}`}
+              className="text-[#cbd5e1] hover:text-[#3b82f6] transition-colors"
+            >
+              {link.label}
+            </a>
+          ))}
         </nav>
 
-        {/* Mobile Menu Button */}
-        <div className="md:hidden">
-          <button onClick={() => setMenuOpen(!menuOpen)} className="text-white">
-            <TiThMenu className="text-2xl" />
-          </button>
+        {/* Hire Me Button (Desktop Only) */}
+        <div className="hidden lg:block">
+          <a
+            href="#contact"
+            className="border-none bg-gradient-to-r from-[#14b8a6] to-[#3b82f6] hover:bg-gradient-to-l transition-all duration-300 ease-in-out text-white font-bold px-4 py-2 rounded"
+          >
+            Hire Me
+          </a>
         </div>
 
-        {/* Hire Me Button */}
-        <div className="hidden md:block">
-          <button className="btn border-none hover:bg-gradient-to-l transition-all duration-300 ease-in-out bg-gradient-to-r from-[#14b8a6] to-[#3b82f6] text-white font-bold px-4 py-2 rounded">
-            Hire Me
+        {/* Mobile Menu Button */}
+        <div className="lg:hidden">
+          <button onClick={() => setMenuOpen(!menuOpen)} className="text-white">
+            {menuOpen ? (
+              <IoMdClose className="text-3xl" />
+            ) : (
+              <TiThMenu className="text-3xl" />
+            )}
           </button>
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 mx-auto md:hidden pb-4 space-y-2">
-          <a
-            href="#about"
-            className="block text-[#cbd5e1] hover:text-[#3b82f6]"
-          >
-            About
-          </a>
-          <a
-            href="#Skills"
-            className="block text-[#cbd5e1] hover:text-[#3b82f6]"
-          >
-            Skills
-          </a>
-          <a
-            href="#education"
-            className="block text-[#cbd5e1] hover:text-[#3b82f6]"
-          >
-            Education
-          </a>
-          <a
-            href="#experience"
-            className="block text-[#cbd5e1] hover:text-[#3b82f6]"
-          >
-            Experience
-          </a>
-          <a
-            href="#projects"
-            className="block text-[#cbd5e1] hover:text-[#3b82f6]"
-          >
-            Projects
-          </a>
+      {/* Mobile & Tablet Dropdown Menu */}
+      <div
+        className={`lg:hidden absolute top-full left-0 w-full bg-gray-900 shadow-md border-b border-gray-700 transform transition-all duration-300 ${
+          menuOpen
+            ? "max-h-screen opacity-100"
+            : "max-h-0 opacity-0 overflow-hidden"
+        }`}
+      >
+        <div className="flex flex-col items-center space-y-4 py-6">
+          {navLinks.map((link) => (
+            <a
+              key={link.id}
+              href={`#${link.id}`}
+              className="block text-[#cbd5e1] hover:text-[#3b82f6] transition-colors"
+              onClick={() => setMenuOpen(false)} // close menu on click
+            >
+              {link.label}
+            </a>
+          ))}
+
+          {/* Hire Me Button */}
           <a
             href="#contact"
-            className="block text-[#cbd5e1] hover:text-[#3b82f6]"
+            className="mt-4 w-10/12 text-center bg-gradient-to-r from-[#14b8a6] to-[#3b82f6] text-white font-bold px-4 py-2 rounded-lg"
+            onClick={() => setMenuOpen(false)}
           >
-            Contact
-          </a>
-          <button className="w-full mt-2 bg-gradient-to-r from-[#14b8a6] to-[#3b82f6] text-white font-bold px-4 py-2 rounded">
             Hire Me
-          </button>
+          </a>
         </div>
-      )}
+      </div>
     </header>
   );
 };

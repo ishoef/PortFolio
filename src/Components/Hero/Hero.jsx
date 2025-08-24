@@ -29,17 +29,24 @@ function Hero() {
   }, [index, isDeleting]);
 
   return (
-    <div id="hero" className="bg-[#0f172a] text-[#cbd5e1] font-mono">
-      <section className="w-10/12 md:w-8/12 mx-auto flex flex-col md:flex-row justify-between items-center py-5 md:py-26">
+    <div
+      id="hero"
+      className="bg-[#0f172a] text-[#cbd5e1] font-mono pt-16 md:pt-24 lg:pt-32"
+    >
+      <section className="w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 mx-auto flex flex-col-reverse lg:flex-row items-center lg:items-center justify-between gap-10 lg:gap-16 py-10">
+        {/* Left Content */}
         <motion.div
-          className="max-w-xl"
+          className="max-w-xl text-center md:text-left"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <p className="text-[#22c55e]"> &gt;_console.log("Hello World!")</p>
+          <p className="text-[#22c55e] text-sm md:text-base">
+            &gt;_console.log("Hello World!")
+          </p>
+
           <motion.h1
-            className="text-2xl md:text-5xl font-bold mt-4"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
@@ -51,7 +58,7 @@ function Hero() {
           </motion.h1>
 
           <motion.h2
-            className="text-xl md:text-2xl mt-2 border-r-2 border-[#3b82f6] pr-2 whitespace-nowrap"
+            className="text-lg sm:text-xl md:text-2xl mt-3 border-r-2 border-[#3b82f6] pr-2 inline-block"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1 }}
@@ -61,7 +68,7 @@ function Hero() {
           </motion.h2>
 
           <motion.p
-            className="text-[#94a3b8] mt-4 text-center md:text-start"
+            className="text-[#94a3b8] mt-4 text-sm sm:text-base md:text-lg"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.5 }}
@@ -71,8 +78,9 @@ function Hero() {
             modern technologies and clean code practices.
           </motion.p>
 
+          {/* Buttons + Socials */}
           <motion.div
-            className="mt-6 flex items-center justify-center md:justify-start md:space-x-4 "
+            className="mt-6 flex flex-wrap gap-4 justify-center md:justify-start"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 2 }}
@@ -80,35 +88,36 @@ function Hero() {
             <a
               href="/resume.pdf"
               download="Ismail_Nayef_Resume.pdf"
-              className="border border-[#3b82f6] bg-[#3b82f6]/10 hover:bg-primary text-white px-4 py-2 rounded"
+              className="border border-[#3b82f6] bg-[#3b82f6]/10 hover:bg-[#3b82f6] text-white px-5 py-2 rounded-lg text-sm sm:text-base"
             >
               Download Resume
             </a>
-            <a href="#" className="text-[#94a3b8] hover:text-[#3b82f6]">
+            <a href="#" className="text-[#94a3b8] hover:text-[#3b82f6] text-xl">
               <i className="fab fa-github"></i>
             </a>
-            <a href="#" className="text-[#94a3b8] hover:text-[#3b82f6]">
+            <a href="#" className="text-[#94a3b8] hover:text-[#3b82f6] text-xl">
               <i className="fab fa-linkedin"></i>
             </a>
-            <a href="#" className="text-[#94a3b8] hover:text-[#3b82f6]">
+            <a href="#" className="text-[#94a3b8] hover:text-[#3b82f6] text-xl">
               <i className="fab fa-twitter"></i>
             </a>
           </motion.div>
         </motion.div>
 
+        {/* Right Image */}
         <motion.div
-          className="mt-10 md:mt-0 md:mr-20"
-          animate={{ y: [0, 20, 0] }} // Moves down and back up
+          className="flex justify-center md:justify-end"
+          animate={{ y: [0, 20, 0] }}
           transition={{
-            duration: 4, // Time for one full up-down loop
-            repeat: Infinity, // Loops forever
-            ease: "easeInOut", // Smooth easing
+            duration: 4,
+            repeat: Infinity,
+            ease: "easeInOut",
           }}
         >
           <img
             src="https://i.ibb.co/r2946Ddt/new.jpg"
             alt="Profile"
-            className="rounded w-64 h-84 object-cover border-4 border-[#14b8a6] shadow-lg"
+            className="rounded-xl w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 object-cover border-4 border-[#14b8a6] shadow-lg"
           />
         </motion.div>
       </section>

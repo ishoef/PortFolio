@@ -5,7 +5,7 @@ import Logo from "../Logo/Logo";
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300 py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 border-b border-gray-700 pb-8 mb-8">
           {/* Section 1: Ismail Nayef Info */}
           <div>
