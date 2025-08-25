@@ -61,15 +61,23 @@ const ContactSection = () => {
           </div>
 
           <div className="flex gap-4 mt-6">
-            <Link className="bg-[#1f2d40] p-2 rounded-full">
+            <a
+              href="https://github.com/ishoef"
+              className="bg-[#1f2d40] p-2 rounded-full"
+              target="_blank"
+            >
               <BsGithub className="text-white w-5 h-5" />
-            </Link>
-            <Link className="bg-[#1f2d40] p-2 rounded-full">
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ismailnayef"
+              className="bg-[#1f2d40] p-2 rounded-full"
+              target="_blank"
+            >
               <Linkedin className="text-white w-5 h-5" />
-            </Link>
-            <Link className="bg-[#1f2d40] p-2 rounded-full">
+            </a>
+            <a className="bg-[#1f2d40] p-2 rounded-full" target="_blank">
               <ExternalLink className="text-white w-5 h-5" />
-            </Link>
+            </a>
           </div>
         </div>
 
