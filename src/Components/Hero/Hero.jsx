@@ -117,7 +117,7 @@ function Hero() {
           <img
             src="https://i.ibb.co/r2946Ddt/new.jpg"
             alt="Profile"
-            className="rounded-xl w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 object-cover border-4 border-[#14b8a6] shadow-lg"
+            className="rounded-xl w-40 h-50 sm:w-56 sm:h-66 md:w-64 md:h-84 object-cover border-4 border-[#14b8a6] shadow-lg"
           />
         </motion.div>
       </section>

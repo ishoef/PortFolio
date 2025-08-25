@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { TiThMenu } from "react-icons/ti";
 import { IoMdClose } from "react-icons/io";
 import Logo from "../Logo/Logo";
+import { Link } from "react-router";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -36,12 +37,12 @@ const Header = () => {
 
         {/* Hire Me Button (Desktop Only) */}
         <div className="hidden lg:block">
-          <a
-            href="#contact"
+          <Link
+            href="/hireme"
             className="border-none bg-gradient-to-r from-[#14b8a6] to-[#3b82f6] hover:bg-gradient-to-l transition-all duration-300 ease-in-out text-white font-bold px-4 py-2 rounded"
           >
             Hire Me
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}

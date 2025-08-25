@@ -23,7 +23,7 @@ const tools = ["Git", "Vercel", "Figma", "VS Code", "Netlify"];
 
 const Skills = () => {
   return (
-    <section id="Skills" className="min-h-content bg-[#0f172a] py-20">
+    <section id="skills" className="min-h-content bg-[#0f172a] py-20">
       <div className="w-11/12 md:w-8/12 mx-auto flex flex-col items-center justify-center bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white p-3 md:p-10">
         <h1 className="text-4xl font-bold mb-10 text-center">
           <span className="text-cyan-400">Skills</span> &{" "}
