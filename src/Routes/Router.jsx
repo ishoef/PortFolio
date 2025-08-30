@@ -3,6 +3,7 @@ import Home from "../Pages/Home/Home";
 import MainLayout from "../Layouts/MainLayout";
 import Error from "../Pages/Error/Error";
 import HireMePage from "../Pages/HireMe/HireMePage";
+import ProjectDetails from "../Pages/ProjectDetails/ProjectDetails";
 
 export const router = createBrowserRouter([
   {
@@ -16,8 +17,12 @@ export const router = createBrowserRouter([
         Component: Home,
       },
       {
-        path: "hireme", 
+        path: "hireme",
         Component: HireMePage,
+      },
+      {
+        path: "Project-details",
+        element: <ProjectDetails />,
       },
     ],
   },

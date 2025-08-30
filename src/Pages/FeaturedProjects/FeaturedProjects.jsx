@@ -1,4 +1,5 @@
 import React from "react";
+import ProjectCard from "../../Components/ProjectCard/ProjectCard";
 
 const projects = [
   {
@@ -41,42 +42,44 @@ const FeaturedProjects = () => {
           Featured Projects
         </h2>
         <div className="h-1 w-24 bg-green-400 mx-auto mb-12" />
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, idx) => (
-            <div
-              key={idx}
-              className="bg-[#121f36] rounded-xl overflow-hidden shadow-lg"
-            >
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-5">
-                <h3 className="text-xl font-semibold text-green-400">
-                  {project.title}
-                </h3>
-                <p className="text-sm mt-2">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mt-4">
-                  {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className={`text-xs text-white px-2 py-1 rounded-full ${
-                        tagColors[tag] || "bg-gray-600"
-                      }`}
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-                <a
-                  href="#"
-                  className="w-full flex items-center justify-center mt-6 border border-green-400 bg-green-500/10 hover:bg-blue-500 text-white font-medium px-4 py-2 rounded-lg transition-colors duration-300"
-                >
-                  View Details
-                </a>
-              </div>
-            </div>
+            // <div
+            //   key={idx}
+            //   className="bg-[#121f36] rounded-xl overflow-hidden shadow-lg"
+            // >
+            //   <img
+            //     src={project.image}
+            //     alt={project.title}
+            //     className="w-full h-48 object-cover"
+            //   />
+            //   <div className="p-5">
+            //     <h3 className="text-xl font-semibold text-green-400">
+            //       {project.title}
+            //     </h3>
+            //     <p className="text-sm mt-2">{project.description}</p>
+            //     <div className="flex flex-wrap gap-2 mt-4">
+            //       {project.tags.map((tag) => (
+            //         <span
+            //           key={tag}
+            //           className={`text-xs text-white px-2 py-1 rounded-full ${
+            //             tagColors[tag] || "bg-gray-600"
+            //           }`}
+            //         >
+            //           {tag}
+            //         </span>
+            //       ))}
+            //     </div>
+            //     <a
+            //       href="#"
+            //       className="w-full flex items-center justify-center mt-6 border border-green-400 bg-green-500/10 hover:bg-blue-500 text-white font-medium px-4 py-2 rounded-lg transition-colors duration-300"
+            //     >
+            //       View Details
+            //     </a>
+            //   </div>
+            // </div>
+
+            <ProjectCard />
           ))}
         </div>
       </div>

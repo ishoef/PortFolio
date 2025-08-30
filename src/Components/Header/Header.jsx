@@ -38,7 +38,7 @@ const Header = () => {
         {/* Hire Me Button (Desktop Only) */}
         <div className="hidden lg:block">
           <Link
-            href="/hireme"
+            to="hireme"
             className="border-none bg-gradient-to-r from-[#14b8a6] to-[#3b82f6] hover:bg-gradient-to-l transition-all duration-300 ease-in-out text-white font-bold px-4 py-2 rounded"
           >
             Hire Me
