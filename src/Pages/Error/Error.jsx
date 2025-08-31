@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 const Error = () => {
   useEffect(() => {
-    document.title = "App Godaun | Error";
+    document.title = "Error | Portfolio";
   }, []);
 
   return (

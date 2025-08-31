@@ -16,16 +16,18 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://github.com/ishoef"
                 className="p-3 border border-gray-600 rounded-md hover:border-green-500 transition-colors duration-300"
                 aria-label="GitHub"
+                target="_blank"
               >
                 <FaGithub className="text-xl text-gray-400 hover:text-green-500" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/ismailnayef"
                 className="p-3 border border-gray-600 rounded-md hover:border-green-500 transition-colors duration-300"
                 aria-label="LinkedIn"
+                target="_blank"
               >
                 <FaLinkedin className="text-xl text-gray-400 hover:text-green-500" />
               </a>

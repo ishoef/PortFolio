@@ -1,40 +1,51 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ProjectCard from "../../Components/ProjectCard/ProjectCard";
+import axios from "axios";
 
-const projects = [
-  {
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce solution with payment integration",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"],
-    image: "/images/ecommerce.jpg", // replace with actual image path
-  },
-  {
-    title: "Task Management App",
-    description: "Collaborative project management tool with real-time updates",
-    tags: ["Next.js", "Socket.io", "PostgreSQL"],
-    image: "/images/task.jpg",
-  },
-  {
-    title: "Weather Dashboard",
-    description: "Interactive weather application with data visualization",
-    tags: ["React", "Chart.js", "Weather API"],
-    image: "/images/weather.jpg",
-  },
-];
+// const projects = [
+//   {
+//     title: "E-Commerce Platform",
+//     description: "A full-stack e-commerce solution with payment integration",
+//     tags: ["React", "Node.js", "MongoDB", "Stripe"],
+//     image: "/images/ecommerce.jpg", // replace with actual image path
+//   },
+//   {
+//     title: "Task Management App",
+//     description: "Collaborative project management tool with real-time updates",
+//     tags: ["Next.js", "Socket.io", "PostgreSQL"],
+//     image: "/images/task.jpg",
+//   },
+//   {
+//     title: "Weather Dashboard",
+//     description: "Interactive weather application with data visualization",
+//     tags: ["React", "Chart.js", "Weather API"],
+//     image: "/images/weather.jpg",
+//   },
+// ];
 
-const tagColors = {
-  React: "bg-green-600",
-  "Node.js": "bg-blue-600",
-  MongoDB: "bg-purple-600",
-  Stripe: "bg-yellow-500",
-  "Next.js": "bg-green-500",
-  "Socket.io": "bg-blue-500",
-  PostgreSQL: "bg-purple-700",
-  "Chart.js": "bg-blue-400",
-  "Weather API": "bg-purple-500",
-};
+// const tagColors = {
+//   React: "bg-green-600",
+//   "Node.js": "bg-blue-600",
+//   MongoDB: "bg-purple-600",
+//   Stripe: "bg-yellow-500",
+//   "Next.js": "bg-green-500",
+//   "Socket.io": "bg-blue-500",
+//   PostgreSQL: "bg-purple-700",
+//   "Chart.js": "bg-blue-400",
+//   "Weather API": "bg-purple-500",
+// };
 
 const FeaturedProjects = () => {
+  const [projectsData, setProjectsData] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("/projects.json")
+      .then((res) => setProjectsData(res.data))
+      .catch((error) => console.log("Error Fetching Projects Data", error));
+  }, []);
+
+  console.log(projectsData.length);
   return (
     <section id="projects" className="bg-[#0e1c2f] text-white py-16">
       <div className="w-11/12 md:w-8/12 mx-auto">
@@ -43,7 +54,7 @@ const FeaturedProjects = () => {
         </h2>
         <div className="h-1 w-24 bg-green-400 mx-auto mb-12" />
         <div className="grid md:grid-cols-2 gap-8">
-          {projects.map((project, idx) => (
+          {projectsData.map((project, idx) => (
             // <div
             //   key={idx}
             //   className="bg-[#121f36] rounded-xl overflow-hidden shadow-lg"
@@ -79,7 +90,7 @@ const FeaturedProjects = () => {
             //   </div>
             // </div>
 
-            <ProjectCard />
+            <ProjectCard project={project} key={idx} />
           ))}
         </div>
       </div>

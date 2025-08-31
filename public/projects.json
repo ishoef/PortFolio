@@ -1,0 +1,95 @@
+[
+  {
+    "id": "1",
+    "title": "Knowledge Sharing Platform",
+    "subtitle": "BrainWave",
+    "type": "Full Stack",
+    "description": "Publish articles, explore trending topics, connect with top contributors, and grow your academic network—all in a beautiful, fast, and responsive app.",
+    "previewImage": "https://img.freepik.com/free-vector/website-hosting-concept-illustration_114360-2506.jpg",
+    "buttons": [
+      {
+        "label": "Live Demo",
+        "icon": "ExternalLink",
+        "style": "primary",
+        "url": "#"
+      },
+      {
+        "label": "Frontend Code",
+        "icon": "Github",
+        "style": "secondary",
+        "url": "#"
+      },
+      {
+        "label": "Backend Code",
+        "icon": "Github",
+        "style": "secondary",
+        "url": "#"
+      }
+    ],
+    "features": [
+      {
+        "icon": "Newspaper",
+        "text": "Article Publishing – Create, edit, and manage your own articles with tags and categories"
+      },
+      {
+        "icon": "Lock",
+        "text": "Secure Authentication – Email/password & Google OAuth login/register"
+      },
+      {
+        "icon": "SunMoon",
+        "text": "Dark Mode – Seamless light/dark theme toggle"
+      },
+      {
+        "icon": "CheckCircle2",
+        "text": "Personal Dashboard – Track your articles, likes, and comments"
+      },
+      {
+        "icon": "CheckCircle2",
+        "text": "Explore & Search – Browse featured articles, categories, and top contributors"
+      },
+      {
+        "icon": "CheckCircle2",
+        "text": "Comments & Likes – Engage with articles through comments and likes"
+      }
+    ],
+    "tecknologys":["React.js", "Tailwind CSS", "Node.js", "Express.js" ],
+    "techStack": {
+      "frontend": [
+        "React",
+        "Tailwind CSS",
+        "Axios",
+        "React Router",
+        "Content API"
+      ],
+      "backend": [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Mongoose",
+        "JWT",
+        "REST API",
+        "Bcrypt"
+      ]
+    },
+    "projectLinks": [
+      {
+        "label": "Live Demo",
+        "icon": "ExternalLink",
+        "style": "primary",
+        "url": "#"
+      },
+      {
+        "label": "Frontend Code",
+        "icon": "Github",
+        "style": "secondary",
+        "url": "#"
+      },
+      {
+        "label": "Backend Code",
+        "icon": "Github",
+        "style": "secondary",
+        "url": "#"
+      }
+    ]
+  }
+]

@@ -21,7 +21,7 @@ export const router = createBrowserRouter([
         Component: HireMePage,
       },
       {
-        path: "Project-details",
+        path: "Project-details/:id",
         element: <ProjectDetails />,
       },
     ],
