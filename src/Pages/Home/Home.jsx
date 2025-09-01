@@ -8,9 +8,8 @@ import FeaturedProjects from "../FeaturedProjects/FeaturedProjects";
 import ContactSection from "../ContactSection/ContactSection";
 
 const Home = () => {
-  
   useEffect(() => {
-    document.title = "Home | Portfolio";
+    document.title = "Ismail Nayef";
   }, []);
 
   return (

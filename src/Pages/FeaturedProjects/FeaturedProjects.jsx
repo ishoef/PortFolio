@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import ProjectCard from "../../Components/ProjectCard/ProjectCard";
 import axios from "axios";
+import { FaGithub } from "react-icons/fa";
+import { Link } from "react-router";
 
 // const projects = [
 //   {
@@ -93,6 +95,20 @@ const FeaturedProjects = () => {
             <ProjectCard project={project} key={idx} />
           ))}
         </div>
+        <button className="mt-10 mx-auto block">
+          <a
+            href="https://github.com/ishoef"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer w-fit px-6 py-3 rounded-lg font-semibold text-white 
+               bg-gradient-to-r from-gray-800 via-gray-900 to-black 
+               hover:from-gray-700 hover:via-gray-800 hover:to-gray-900 
+               transition-colors duration-300 shadow-lg flex items-center gap-2 justify-center"
+          >
+            <FaGithub size={20} />
+            View More on Github
+          </a>
+        </button>
       </div>
     </section>
   );

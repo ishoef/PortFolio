@@ -10,7 +10,7 @@ import {
 import { useEffect, useState } from "react";
 import { useLocation, useParams } from "react-router";
 
-export default function ProjectDetails({ params }) {
+export default function ProjectDetails() {
   // gets current route
   const { pathname } = useLocation();
 
@@ -29,10 +29,23 @@ export default function ProjectDetails({ params }) {
       .catch((error) => console.log("Projects Data", error));
   }, []);
 
-  console.log(projectsData);
-
   const projectDetail = projectsData.find((pjct) => pjct.id === id);
   console.log(projectDetail);
+
+  const {
+    title,
+    subtitle,
+    type,
+    description,
+    previewImage,
+    liveUrl,
+    frontendUrl,
+    backendUrl,
+    features,
+    tecknologys,
+    techStack,
+    projectLinks,
+  } = projectDetail || {};
 
   return (
     <div className="pt-32 w-full bg-gradient-to-b from-gray-900 to-gray-950 text-white py-16 px-6">
@@ -43,33 +56,34 @@ export default function ProjectDetails({ params }) {
             FULL STACK
           </span>
           <h1 className="text-4xl sm:text-5xl font-bold mt-2">
-            Knowledge Sharing Platform <br />
+            {title || "No Title"} <br />
             <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-              BrainWave
+              {subtitle}
             </span>
           </h1>
           <p className="text-gray-300 mt-4 text-lg">
-            Publish articles, explore trending topics, connect with top
-            contributors, and grow your academic network—all in a beautiful,
-            fast, and responsive app.
+            {description || "No Description"}
           </p>
 
           {/* Action Buttons */}
           <div className="flex flex-wrap gap-4 mt-6">
             <a
-              href="#"
+              href={liveUrl}
+              target="_blanck"
               className="flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-5 py-2 rounded-lg font-medium shadow-md hover:opacity-90 transition"
             >
               <ExternalLink size={18} /> Live Demo
             </a>
             <a
-              href="#"
+              href={frontendUrl}
+              target="_blanck"
               className="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-gray-200 px-5 py-2 rounded-lg font-medium shadow-md transition"
             >
               <Github size={18} /> Frontend Code
             </a>
             <a
-              href="#"
+              href={backendUrl}
+              target="_blanck"
               className="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-gray-200 px-5 py-2 rounded-lg font-medium shadow-md transition"
             >
               <Github size={18} /> Backend Code
@@ -80,7 +94,7 @@ export default function ProjectDetails({ params }) {
         {/* Right Preview Image */}
         <div className="rounded-xl overflow-hidden shadow-lg">
           <img
-            src="https://img.freepik.com/premium-vector/ecommerce-project-banner-landing-page-template-website_541075-1532.jpg"
+            src={previewImage}
             alt="Project Preview"
             className="w-full object-cover"
           />
@@ -182,19 +196,22 @@ export default function ProjectDetails({ params }) {
           <h3 className="text-xl font-bold mb-4">Project Links</h3>
           <div className="flex flex-col gap-3">
             <a
-              href="#"
+              href={liveUrl}
+              target="_blanck"
               className="flex items-center justify-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium px-5 py-3 rounded-lg shadow-md hover:opacity-90 transition"
             >
               <ExternalLink size={18} /> Live Demo
             </a>
             <a
-              href="#"
+              href={frontendUrl}
+              target="_blanck"
               className="flex items-center justify-center gap-2 bg-gray-700 hover:bg-gray-600 text-gray-200 font-medium px-5 py-3 rounded-lg shadow-md transition"
             >
               <Github size={18} /> Frontend Code
             </a>
             <a
-              href="#"
+              href={backendUrl}
+              target="_blanck"
               className="flex items-center justify-center gap-2 bg-gray-700 hover:bg-gray-600 text-gray-200 font-medium px-5 py-3 rounded-lg shadow-md transition"
             >
               <Github size={18} /> Backend Code
