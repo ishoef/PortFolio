@@ -1,3 +1,4 @@
+import axios from "axios";
 import {
   ExternalLink,
   Github,
@@ -6,16 +7,32 @@ import {
   Newspaper,
   SunMoon,
 } from "lucide-react";
-import { useEffect } from "react";
-import { useLocation } from "react-router";
+import { useEffect, useState } from "react";
+import { useLocation, useParams } from "react-router";
 
-export default function ProjectDetails() {
+export default function ProjectDetails({ params }) {
   // gets current route
   const { pathname } = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0); // scroll to top-left
   }, [pathname]); // runs whenever route changes
+
+  const { id } = useParams();
+  console.log(id);
+  const [projectsData, setProjectsData] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("/projects.json")
+      .then((res) => setProjectsData(res.data))
+      .catch((error) => console.log("Projects Data", error));
+  }, []);
+
+  console.log(projectsData);
+
+  const projectDetail = projectsData.find((pjct) => pjct.id === id);
+  console.log(projectDetail);
 
   return (
     <div className="pt-32 w-full bg-gradient-to-b from-gray-900 to-gray-950 text-white py-16 px-6">
