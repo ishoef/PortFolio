@@ -6,8 +6,17 @@ import {
   Newspaper,
   SunMoon,
 } from "lucide-react";
+import { useEffect } from "react";
+import { useLocation } from "react-router";
 
 export default function ProjectDetails() {
+  // gets current route
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // scroll to top-left
+  }, [pathname]); // runs whenever route changes
+
   return (
     <div className="pt-32 w-full bg-gradient-to-b from-gray-900 to-gray-950 text-white py-16 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
