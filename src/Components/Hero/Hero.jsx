@@ -7,7 +7,7 @@ function Hero() {
       id="hero"
       className="bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-[#e2e8f0] font-sans pt-20 md:pt-28 lg:pt-36 lg:pb-32"
     >
-      <section className="w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20 py-12">
+      <section className="w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-20 py-12">
         {/* Left Content */}
         <motion.div
           className="max-w-2xl text-center lg:text-left"
