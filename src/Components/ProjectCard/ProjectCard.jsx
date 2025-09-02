@@ -2,8 +2,15 @@ import { ExternalLink, Code2 } from "lucide-react";
 import { Link } from "react-router";
 
 export default function ProjectCard({ project }) {
-  const { id, title, subtitle, type, description, previewImage, tecknologys } =
-    project;
+  const {
+    id,
+    subtitle,
+    type,
+    description,
+    previewImage,
+    tecknologys,
+    liveUrl,
+  } = project || {};
 
   const words = description?.split(" ") || [];
   const shortDescription =
@@ -38,7 +45,9 @@ export default function ProjectCard({ project }) {
             <Link
               to={`/Project-details/${id}`}
               className="cursor-pointer text-emerald-400 ml-2 hover:underline"
-            >See More</Link>
+            >
+              See More
+            </Link>
           )}
         </p>
       </div>
@@ -60,7 +69,8 @@ export default function ProjectCard({ project }) {
         {/* Buttons */}
         <div className="flex items-center justify-between border-t border-gray-700 pt-4">
           <a
-            href="#"
+            href={liveUrl}
+            target="_blank"
             className="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-medium px-4 py-2 rounded-lg shadow-md transition"
           >
             <ExternalLink size={18} />

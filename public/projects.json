@@ -57,31 +57,14 @@
   },
   {
     "id": "2",
-    "title": "Knowledge Sharing Platform",
+    "title": "Hobby Discovery Platform",
     "subtitle": "HobbyShop",
     "type": "Full Stack",
-    "description": "Publish articles, explore trending topics, connect with top contributors, and grow your academic network—all in a beautiful, fast, and responsive app.",
-    "previewImage": "https://i.ibb.co.com/TD9rqWTk/uni-Hostel.png",
-    "buttons": [
-      {
-        "label": "Live Demo",
-        "icon": "ExternalLink",
-        "style": "primary",
-        "url": "#"
-      },
-      {
-        "label": "Frontend Code",
-        "icon": "Github",
-        "style": "secondary",
-        "url": "#"
-      },
-      {
-        "label": "Backend Code",
-        "icon": "Github",
-        "style": "secondary",
-        "url": "#"
-      }
-    ],
+    "description": "UniHostel is a full-stack MERN (MongoDB, Express.js, React.js, Node.js) web application that manages university hostel meals and reviews. Students can log in, request meals, give feedback, and upgrade packages, while admins handle all operations efficiently.",
+    "previewImage": "https://i.ibb.co.com/Q3DxswvQ/Screenshot-5.png",
+    "liveUrl": "https://hobby-shoop.netlify.app",
+    "frontendUrl": "https://github.com/ishoef/Hobby-Shoop",
+    "backendUrl": "https://github.com/ishoef/Hobby-Shop-Server",
     "features": [
       {
         "icon": "Newspaper",
@@ -126,26 +109,6 @@
         "REST API",
         "Bcrypt"
       ]
-    },
-    "projectLinks": [
-      {
-        "label": "Live Demo",
-        "icon": "ExternalLink",
-        "style": "primary",
-        "url": "#"
-      },
-      {
-        "label": "Frontend Code",
-        "icon": "Github",
-        "style": "secondary",
-        "url": "#"
-      },
-      {
-        "label": "Backend Code",
-        "icon": "Github",
-        "style": "secondary",
-        "url": "#"
-      }
-    ]
+    }
   }
 ]
