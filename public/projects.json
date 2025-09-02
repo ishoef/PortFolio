@@ -57,10 +57,10 @@
   },
   {
     "id": "2",
-    "title": "Hobby Discovery Platform",
+    "title": "Hobby Group Organizer",
     "subtitle": "HobbyShop",
     "type": "Full Stack",
-    "description": "UniHostel is a full-stack MERN (MongoDB, Express.js, React.js, Node.js) web application that manages university hostel meals and reviews. Students can log in, request meals, give feedback, and upgrade packages, while admins handle all operations efficiently.",
+    "description": "Hobby Shop is a web-based platform designed to help users discover, explore, and purchase items related to various hobbies and interests. Whether you're into art, crafts, music, sports, or tech gadgets, Hobby Shop brings a curated collection of products and resources tailored to hobbyists of all kinds.",
     "previewImage": "https://i.ibb.co.com/Q3DxswvQ/Screenshot-5.png",
     "liveUrl": "https://hobby-shoop.netlify.app",
     "frontendUrl": "https://github.com/ishoef/Hobby-Shoop",

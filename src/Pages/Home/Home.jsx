@@ -148,21 +148,17 @@ const Home = () => {
         <Skills />
       </section>
 
-      <section
-        ref={educationSectionRef}
-        id="education"
-        className="scroll-mt-8"
-      >
+      <section ref={educationSectionRef} id="education" className="scroll-mt-8">
         <Education />
       </section>
 
-      <section
+      {/* <section
         ref={experienceSectionRef}
         id="experience"
         className="scroll-mt-8"
       >
         <Experience />
-      </section>
+      </section> */}
 
       <section ref={projectsSectionRef} id="projects" className="scroll-mt-8">
         <FeaturedProjects />

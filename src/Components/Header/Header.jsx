@@ -15,7 +15,7 @@ const Header = () => {
     { id: "about", label: "About" },
     { id: "skills", label: "Skills" },
     { id: "education", label: "Education" },
-    { id: "experience", label: "Experience" },
+    // { id: "experience", label: "Experience" },
     { id: "projects", label: "Projects" },
     { id: "contact", label: "Contact" },
   ];
@@ -86,14 +86,14 @@ const Header = () => {
               />
             </button>
           ))}
-
-          <button
-            onClick={() => handleNavClick("contact")}
-            className="ml-2 border-none bg-gradient-to-r from-teal-500 to-blue-500 hover:from-blue-500 hover:to-teal-500 transition-all duration-300 text-white font-bold px-4 py-2 rounded-lg shadow"
-          >
-            Hire Me
-          </button>
         </nav>
+        
+        <button
+          onClick={() => handleNavClick("contact")}
+          className="ml-2 border-none bg-gradient-to-r from-teal-500 to-blue-500 hover:from-blue-500 hover:to-teal-500 transition-all duration-300 text-white font-bold px-4 py-2 rounded-lg shadow"
+        >
+          Hire Me
+        </button>
 
         {/* Mobile Menu Button */}
         <div className="lg:hidden">

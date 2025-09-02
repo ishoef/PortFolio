@@ -1,27 +1,27 @@
 import React from "react";
 import { GraduationCap, MapPin, Calendar } from "lucide-react";
 
-const coursework = [
-  { name: "Data Structures", color: "green" },
-  { name: "Algorithms", color: "blue" },
-  { name: "Database Systems", color: "purple" },
-  { name: "Software Engineering", color: "yellow" },
-  { name: "Web Development", color: "cyan" },
-  { name: "Machine Learning", color: "pink" },
-];
+// const coursework = [
+//   { name: "Data Structures", color: "green" },
+//   { name: "Algorithms", color: "blue" },
+//   { name: "Database Systems", color: "purple" },
+//   { name: "Software Engineering", color: "yellow" },
+//   { name: "Web Development", color: "cyan" },
+//   { name: "Machine Learning", color: "pink" },
+// ];
 
-// Helper to generate Tailwind classes dynamically
-const getColorClasses = (color) => {
-  const colors = {
-    green: "border-green-700 bg-green-700/20 text-green-700",
-    blue: "border-blue-700 bg-blue-700/20 text-blue-700",
-    purple: "border-purple-700 bg-purple-700/20 text-purple-700",
-    yellow: "border-yellow-600 bg-yellow-600/20 text-yellow-600",
-    cyan: "border-cyan-700 bg-cyan-700/20 text-cyan-700",
-    pink: "border-pink-700 bg-pink-700/20 text-pink-700",
-  };
-  return colors[color] || "border-gray-500 bg-gray-500/20 text-gray-500";
-};
+// // Helper to generate Tailwind classes dynamically
+// const getColorClasses = (color) => {
+//   const colors = {
+//     green: "border-green-700 bg-green-700/20 text-green-700",
+//     blue: "border-blue-700 bg-blue-700/20 text-blue-700",
+//     purple: "border-purple-700 bg-purple-700/20 text-purple-700",
+//     yellow: "border-yellow-600 bg-yellow-600/20 text-yellow-600",
+//     cyan: "border-cyan-700 bg-cyan-700/20 text-cyan-700",
+//     pink: "border-pink-700 bg-pink-700/20 text-pink-700",
+//   };
+//   return colors[color] || "border-gray-500 bg-gray-500/20 text-gray-500";
+// };
 
 const Education = () => {
   return (
@@ -44,30 +44,36 @@ const Education = () => {
               <GraduationCap className="text-white" size={24} />
             </div>
             <h2 className="text-lg sm:text-xl md:text-2xl font-semibold">
-              Bachelor of Science in Computer Science
+              Bachelor's in Islamic Studies
             </h2>
           </div>
           <div className="flex items-center gap-2 border border-green-700 bg-green-700/20 px-3 py-1 rounded-full text-sm">
             <Calendar size={16} />
-            2019 - 2023
+            3rd Year
           </div>
         </div>
 
         {/* University */}
         <div className="flex items-center gap-2 mb-4 text-gray-400 text-sm sm:text-base">
           <MapPin size={16} />
-          <span>University of Technology</span>
+          <span>Al-Azhar University, Cairo, University</span>
         </div>
 
         {/* Description */}
         <p className="mb-4 text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed">
-          Graduated with honors, focusing on software engineering, data
-          structures, algorithms, and web development. Completed capstone
-          project on machine learning applications in web development.
+          Currently pursuing a Bachelor’s degree in Islamic Studies at Al-Azhar
+          University (3rd year), while building strong expertise as a Front-end
+          Developer. Skilled in React.js, JavaScript, Tailwind CSS, and modern
+          web technologies, with hands-on experience creating responsive,
+          user-friendly applications. Passionate about bridging analytical
+          skills from academic studies with innovative problem-solving in web
+          development. Completed multiple projects including dynamic dashboards,
+          recommendation systems, and hostel management platforms using the MERN
+          stack.
         </p>
 
         {/* Relevant Coursework */}
-        <div>
+        {/* <div>
           <h3 className="text-green-400 font-semibold mb-2 text-base sm:text-lg">
             Relevant Coursework:
           </h3>
@@ -83,7 +89,7 @@ const Education = () => {
               </span>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
