@@ -12,7 +12,10 @@ import { Link } from "react-router";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="bg-[#0e1c2f] text-white py-16">
+    <section
+      id="contact"
+      className="bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white py-16"
+    >
       <h1 className="text-4xl font-bold mb-10 text-center">
         <span className="text-blue-400">Get in Touch</span>
         <div className="w-24 h-1 bg-green-400 mt-2 mx-auto"></div>

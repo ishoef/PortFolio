@@ -5,7 +5,7 @@ function AboutMe() {
   return (
     <section
       id="about"
-      className="bg-[#0f172a] text-[#f1f5f9] py-12 md:py-16 lg:py-20"
+      className="bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-[#f1f5f9] py-12 md:py-16 lg:py-20"
     >
       <div className="w-11/12 md:w-9/12 lg:w-7/12 mx-auto">
         {/* Heading */}

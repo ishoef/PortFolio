@@ -31,7 +31,7 @@ function Hero() {
   return (
     <div
       id="hero"
-      className="bg-[#0f172a] text-[#cbd5e1] font-mono pt-16 md:pt-24 lg:pt-32"
+      className="bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-[#cbd5e1] font-mono pt-16 md:pt-24 lg:pt-32"
     >
       <section className="w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 mx-auto flex flex-col-reverse lg:flex-row items-center lg:items-center justify-between gap-10 lg:gap-16 py-10">
         {/* Left Content */}

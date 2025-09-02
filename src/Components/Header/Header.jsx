@@ -70,15 +70,15 @@ const Header = () => {
             <button
               key={link.id}
               onClick={() => handleNavClick(link.id)}
-              className={`text-base font-medium transition-all duration-300 relative group ${
+              className={`text-base font-medium transition-all duration-300 relative group cursor-pointer ${
                 activeLink === link.id
-                  ? "text-teal-400"
-                  : "text-gray-200 hover:text-teal-400"
+                  ? "text-blue-400"
+                  : "text-gray-200 hover:text-blue-400"
               }`}
             >
               {link.label}
               <span
-                className={`absolute -bottom-1 left-0 w-full h-[2px] bg-teal-400 transform transition-transform duration-300 ${
+                className={`absolute -bottom-1 left-0 w-full h-[2px] bg-blue-400 transform transition-transform duration-300 ${
                   activeLink === link.id
                     ? "scale-x-100"
                     : "scale-x-0 group-hover:scale-x-100"
@@ -87,10 +87,10 @@ const Header = () => {
             </button>
           ))}
         </nav>
-        
+
         <button
           onClick={() => handleNavClick("contact")}
-          className="ml-2 border-none bg-gradient-to-r from-teal-500 to-blue-500 hover:from-blue-500 hover:to-teal-500 transition-all duration-300 text-white font-bold px-4 py-2 rounded-lg shadow"
+          className="ml-2 border-none bg-gradient-to-r from-teal-500 to-blue-500 hover:from-blue-500 hover:to-teal-500 transition-all duration-300 text-white font-bold px-4 py-2 rounded-lg shadow cursor-pointer"
         >
           Hire Me
         </button>

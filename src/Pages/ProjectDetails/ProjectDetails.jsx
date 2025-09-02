@@ -48,7 +48,7 @@ export default function ProjectDetails() {
   } = projectDetail || {};
 
   return (
-    <div className="pt-32 w-full bg-gradient-to-b from-gray-900 to-gray-950 text-white py-16 px-6">
+    <div className="pt-32 w-full bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white py-16 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div>

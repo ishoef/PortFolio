@@ -110,5 +110,61 @@
         "Bcrypt"
       ]
     }
+  },
+  {
+    "id": "3",
+    "title": "Product Recommendation System",
+    "subtitle": "RecSyS",
+    "type": "Full Stack",
+    "description": "A full-stack web application where users can post product-related queries, get community-driven recommendations, and explore better alternatives — all in a dynamic, interactive, and responsive environment.",
+    "previewImage": "https://i.ibb.co.com/Xfqvvhvc/Screenshot-7.png",
+    "liveUrl": "https://recoosys.netlify.app",
+    "frontendUrl": "https://github.com/ishoef/RecSys-Client-Side",
+    "backendUrl": "https://github.com/ishoef/RecSys-Server-side",
+    "features": [
+      {
+        "icon": "Newspaper",
+        "text": "Article Publishing – Create, edit, and manage your own articles with tags and categories"
+      },
+      {
+        "icon": "Lock",
+        "text": "Secure Authentication – Email/password & Google OAuth login/register"
+      },
+      {
+        "icon": "SunMoon",
+        "text": "Dark Mode – Seamless light/dark theme toggle"
+      },
+      {
+        "icon": "CheckCircle2",
+        "text": "Personal Dashboard – Track your articles, likes, and comments"
+      },
+      {
+        "icon": "CheckCircle2",
+        "text": "Explore & Search – Browse featured articles, categories, and top contributors"
+      },
+      {
+        "icon": "CheckCircle2",
+        "text": "Comments & Likes – Engage with articles through comments and likes"
+      }
+    ],
+    "tecknologys": ["React.js", "Tailwind CSS", "Node.js", "Express.js"],
+    "techStack": {
+      "frontend": [
+        "React",
+        "Tailwind CSS",
+        "Axios",
+        "React Router",
+        "Content API"
+      ],
+      "backend": [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Mongoose",
+        "JWT",
+        "REST API",
+        "Bcrypt"
+      ]
+    }
   }
 ]
