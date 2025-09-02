@@ -49,7 +49,7 @@ export default function ProjectDetails() {
 
   return (
     <div className="pt-32 w-full bg-gradient-to-b from-gray-900 to-gray-950 text-white py-16 px-6">
-      <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div>
           <span className="text-emerald-400 font-semibold text-sm">
@@ -102,7 +102,7 @@ export default function ProjectDetails() {
       </div>
 
       {/* Key Features */}
-      <div className="max-w-5xl mx-auto mt-16">
+      <div className="max-w-7xl mx-auto mt-16">
         <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
           <span className="text-emerald-400">Key Features</span>
         </h2>
@@ -145,7 +145,7 @@ export default function ProjectDetails() {
       </div>
 
       {/* Bottom Section */}
-      <div className="max-w-5xl mx-auto mt-16 grid lg:grid-cols-2 gap-12">
+      <div className="max-w-7xl mx-auto mt-16 grid lg:grid-cols-2 gap-12">
         {/* Tech Stack */}
         <div className="bg-gray-800 rounded-xl p-6 shadow-md">
           <h3 className="text-xl font-bold mb-4">Technology Stack</h3>

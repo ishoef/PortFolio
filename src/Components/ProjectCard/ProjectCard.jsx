@@ -77,7 +77,7 @@ export default function ProjectCard({ project }) {
             Live Demo
           </a>
           <a
-            href={`Project-details/${id}`}
+            href={`Projects/${id}`}
             className="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-gray-200 font-medium px-4 py-2 rounded-lg shadow-md transition"
           >
             <Code2 size={18} />
