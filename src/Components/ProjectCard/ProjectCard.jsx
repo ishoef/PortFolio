@@ -43,7 +43,7 @@ export default function ProjectCard({ project }) {
           {shortDescription}
           {words.length > 20 && (
             <Link
-              to={`/Project-details/${id}`}
+              to={`/Projects/${id}`}
               className="cursor-pointer text-emerald-400 ml-2 hover:underline"
             >
               See More
