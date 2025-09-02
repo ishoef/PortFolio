@@ -92,14 +92,14 @@ const Skills = () => {
 
             {/* Tools & Others */}
             <div className="bg-[#1e293b] rounded-xl p-5 sm:p-6 md:p-8 shadow-md">
-              <h2 className="text-purple-400 text-lg sm:text-xl md:text-2xl font-semibold mb-4">
+              <h2 className="text-blue-400 text-lg sm:text-xl md:text-2xl font-semibold mb-4">
                 Tools & Others
               </h2>
               <div className="flex flex-wrap gap-2">
                 {tools.map((tool) => (
                   <span
                     key={tool}
-                    className="px-3 py-1 border border-purple-700 bg-purple-700/10 rounded-full text-xs sm:text-sm"
+                    className="px-3 py-1 border border-blue-700 bg-blue-700/10 rounded-full text-xs sm:text-sm"
                   >
                     {tool}
                   </span>

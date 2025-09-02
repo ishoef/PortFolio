@@ -32,7 +32,7 @@ const Education = () => {
       {/* Heading */}
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-10 text-center">
         <span className="text-blue-400">Education</span>
-        <div className="w-20 sm:w-24 h-1 bg-green-400 mt-2 mx-auto rounded-full"></div>
+        <div className="w-20 sm:w-24 h-1 bg-blue-400 mt-2 mx-auto rounded-full"></div>
       </h1>
 
       {/* Card */}
@@ -40,14 +40,14 @@ const Education = () => {
         {/* Header: Degree & Date */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4 gap-4 md:gap-0">
           <div className="flex items-center gap-3">
-            <div className="bg-green-400 rounded p-1">
+            <div className="bg-blue-400 rounded p-1">
               <GraduationCap className="text-white" size={24} />
             </div>
             <h2 className="text-lg sm:text-xl md:text-2xl font-semibold">
               Bachelor's in Islamic Studies
             </h2>
           </div>
-          <div className="flex items-center gap-2 border border-green-700 bg-green-700/20 px-3 py-1 rounded-full text-sm">
+          <div className="flex items-center gap-2 border border-blue-700 bg-blue-700/20 px-3 py-1 rounded-full text-sm">
             <Calendar size={16} />
             3rd Year
           </div>
