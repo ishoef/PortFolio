@@ -80,6 +80,7 @@ import FeaturedProjects from "../FeaturedProjects/FeaturedProjects";
 import ContactSection from "../ContactSection/ContactSection";
 import { useLocation } from "react-router";
 import ModernLoader from "../../Components/Loader/ModernLoader";
+import ContactForm from "../../Components/ContactForm/ContactForm";
 
 const Home = () => {
   useEffect(() => {
@@ -166,6 +167,10 @@ const Home = () => {
 
       <section ref={contactSectionRef} id="contact" className="scroll-mt-8">
         <ContactSection />
+      </section>
+
+      <section className="py-20 w-full bg-gray-800">
+        <ContactForm />
       </section>
     </>
   );
