@@ -169,9 +169,9 @@ const Home = () => {
         <ContactSection />
       </section>
 
-      <section className="py-20 w-full bg-gray-800">
+      {/* <section className="py-20 w-full bg-gray-800">
         <ContactForm />
-      </section>
+      </section> */}
     </>
   );
 };
