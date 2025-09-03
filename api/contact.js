@@ -21,12 +21,26 @@ export default async function handler(req, res) {
       },
     });
 
-    // Email options
+    // Email options with HTML formatting
     const mailOptions = {
-      from: email,
-      to: process.env.EMAIL_USER,
+      from: process.env.EMAIL_USER, // Your Gmail (must match login)
+      replyTo: email, // User's email for reply
+      to: process.env.EMAIL_USER, // Your email to receive messages
       subject: `Portfolio Message: ${subject}`,
-      text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
+      html: `
+        <div style="font-family: Arial, sans-serif; color: #111; line-height: 1.6;">
+          <h2 style="color: #1D4ED8;">New Portfolio Message</h2>
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Subject:</strong> ${subject}</p>
+          <p><strong>Message:</strong></p>
+          <p style="background-color: #f3f4f6; padding: 10px; border-radius: 5px;">${message}</p>
+          <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;" />
+          <p style="font-size: 0.9em; color: #555;">
+            This message was sent from your portfolio contact form.
+          </p>
+        </div>
+      `,
     };
 
     await transporter.sendMail(mailOptions);
