@@ -39,7 +39,7 @@ function Hero() {
           {/* Buttons */}
           <div className="mt-8 flex flex-wrap gap-4 justify-center lg:justify-start">
             <a
-              href="#work"
+              href="#projects"
               className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-lg shadow-lg transition-all duration-300"
             >
               View My Work

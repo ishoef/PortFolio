@@ -62,14 +62,17 @@ const Education = () => {
         {/* Description */}
         <p className="mb-4 text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed">
           Currently pursuing a Bachelor’s degree in Islamic Studies at Al-Azhar
-          University (3rd year), while building strong expertise as a Front-end
-          Developer. Skilled in React.js, JavaScript, Tailwind CSS, and modern
-          web technologies, with hands-on experience creating responsive,
-          user-friendly applications. Passionate about bridging analytical
-          skills from academic studies with innovative problem-solving in web
-          development. Completed multiple projects including dynamic dashboards,
-          recommendation systems, and hostel management platforms using the MERN
-          stack.
+          University (3rd year) while developing strong expertise as a Front-end
+          Developer. Proficient in React.js, JavaScript, Tailwind CSS, and
+          modern web technologies, with hands-on experience in building
+          responsive and user-friendly applications.
+        </p>
+
+        <p className="mb-4 text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed">
+          Passionate about combining analytical skills from academic studies
+          with creative problem-solving in web development. Successfully
+          delivered projects such as dynamic dashboards, recommendation systems,
+          and hostel management platforms using the MERN stack.
         </p>
 
         {/* Relevant Coursework */}

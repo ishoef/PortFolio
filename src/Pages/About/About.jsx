@@ -9,7 +9,7 @@ function AboutMe() {
     >
       <div className="w-11/12 md:w-9/12 lg:w-7/12 mx-auto">
         {/* Heading */}
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-6 sm:mb-8 md:mb-10">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-2">
           About <span className="text-[#3b82f6]">Me</span>
         </h2>
         <div className="w-20 sm:w-24 h-1 bg-gradient-to-r from-[#22c55e] to-[#3b82f6] mx-auto mb-10 sm:mb-12 md:mb-16 rounded-full"></div>

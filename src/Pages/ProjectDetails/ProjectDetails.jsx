@@ -52,7 +52,7 @@ export default function ProjectDetails() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div>
-          <span className="text-emerald-400 font-semibold text-sm">
+          <span className="text-blue-400 font-semibold text-sm">
             FULL STACK
           </span>
           <h1 className="text-4xl sm:text-5xl font-bold mt-2">
@@ -104,7 +104,7 @@ export default function ProjectDetails() {
       {/* Key Features */}
       <div className="max-w-7xl mx-auto mt-16">
         <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
-          <span className="text-emerald-400">Key Features</span>
+          <span className="text-blue-400">Key Features</span>
         </h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[

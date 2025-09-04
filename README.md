@@ -10,6 +10,5 @@ Installed Packages
 8. SweetAlert2 = "sweetalert2": "^11.21.2",
 9. React Toastify = "react-toastify": "^11.0.5",
 
-
 <!-- You Need to this -->
-You Can use your custom theme with daisyUI Plugin in "index.css".
+You Can use your custom theme with daisyUI Plugin in "index.css". 

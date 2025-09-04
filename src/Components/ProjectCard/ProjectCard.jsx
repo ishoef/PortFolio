@@ -19,11 +19,11 @@ export default function ProjectCard({ project }) {
   return (
     <div
       className="bg-gradient-to-b from-[#0a0f1c] to-[#111827] 
-      rounded-2xl p-6 shadow-xl border border-gray-800 
+      rounded-2xl  shadow-xl border border-gray-800 
       w-full max-w-3xl mx-auto flex flex-col text-gray-200"
     >
       {/* 🔹 Preview Image */}
-      <div className="rounded-xl overflow-hidden shadow-lg mb-6 border border-gray-700">
+      <div className="rounded-t-xl overflow-hidden shadow-lg mb-6 border border-gray-700">
         <img
           src={previewImage}
           alt="Project Preview"
@@ -32,7 +32,7 @@ export default function ProjectCard({ project }) {
       </div>
 
       {/* 🔹 Project Info */}
-      <div>
+      <div className="px-6">
         <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 flex items-center gap-3">
           {subtitle}
           <span className="bg-gray-800/80 text-blue-300 px-3 py-1 rounded-full text-xs sm:text-sm border border-gray-700">
@@ -54,7 +54,7 @@ export default function ProjectCard({ project }) {
       </div>
 
       {/* 🔹 Bottom Section (Tech + Buttons) */}
-      <div className="mt-auto">
+      <div className="mt-auto px-6 pb-6">
         {/* Tech Stack */}
         <div className="flex flex-wrap gap-2 my-6">
           {tecknologys.map((tech, idx) => (
@@ -68,7 +68,7 @@ export default function ProjectCard({ project }) {
         </div>
 
         {/* Buttons */}
-        <div className="flex items-center justify-between border-t border-gray-700 pt-4">
+        <div className=" flex items-center justify-between border-t border-gray-700 pt-4">
           <a
             href={liveUrl}
             target="_blank"
